@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
+import Nav from "./nav";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
 
 const name = "Elizabeth Clift";
 export const siteTitle = "Elizabeth Clift | Software Engineer";
@@ -40,6 +41,8 @@ export default function Layout({ children, home }) {
             />
 
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
+
+            <Nav />
           </>
         ) : (
           <>
@@ -59,6 +62,8 @@ export default function Layout({ children, home }) {
                 {name}
               </Link>
             </h2>
+
+            <Nav />
           </>
         )}
       </header>

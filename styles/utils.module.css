@@ -43,8 +43,15 @@
   margin: 0;
 }
 
+.horizontalList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
 .listItem {
-  margin: 0 0 1.25rem;
+  margin: 0 1.25rem;
 }
 
 .lightText {
