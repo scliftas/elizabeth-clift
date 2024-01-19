@@ -12,6 +12,7 @@ export default function Layout({ children, home }) {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
@@ -37,6 +38,7 @@ export default function Layout({ children, home }) {
               width={144}
               alt=""
             />
+
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
@@ -51,6 +53,7 @@ export default function Layout({ children, home }) {
                 alt=""
               />
             </Link>
+
             <h2 className={utilStyles.headingLg}>
               <Link href="/" className={utilStyles.colorInherit}>
                 {name}
