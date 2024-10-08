@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Nav from "./nav";
+import Nav from "../Nav";
 import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
+import utilStyles from "../../styles/utils.module.css";
 
 const name = "Elizabeth Clift";
 export const siteTitle = "Elizabeth Clift | Software Engineer";
@@ -40,7 +40,14 @@ export default function Layout({ children, home }) {
               alt=""
             />
 
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className={`${utilStyles.heading2Xl} ${styles.name}`}>
+              {name}
+            </h1>
+            <p
+              className={`${utilStyles.headingLg} ${utilStyles.lightText} ${styles.pronouns}`}
+            >
+              she/her
+            </p>
 
             <Nav />
           </>
@@ -57,11 +64,20 @@ export default function Layout({ children, home }) {
               />
             </Link>
 
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/" className={utilStyles.colorInherit}>
+            <h2 className={`${utilStyles.headingLg} ${styles.name}`}>
+              <Link
+                href="/"
+                className={`${utilStyles.colorInherit} ${utilStyles.headingLg}`}
+              >
                 {name}
               </Link>
             </h2>
+
+            <p
+              className={`${utilStyles.headingMd} ${utilStyles.lightText} ${styles.pronouns}`}
+            >
+              she/her
+            </p>
 
             <Nav />
           </>
@@ -75,6 +91,10 @@ export default function Layout({ children, home }) {
           <Link href="/">← Back to home</Link>
         </div>
       )}
+
+      <footer className={`${styles.footer} ${utilStyles.lightText}`}>
+        Built by me. Powered by Next.js and Notion.
+      </footer>
     </div>
   );
 }
