@@ -1,17 +1,8 @@
 import utilStyles from "../../styles/utils.module.css";
-import Link from "next/link";
 
 export default function Nav() {
   return (
     <ul className={utilStyles.horizontalList}>
-      <li
-        className={`${utilStyles.listItem} ${utilStyles.headingMd} ${utilStyles.lightText}`}
-      >
-        <Link href="/elizabeth-clift_cv.pdf" target="_blank">
-          CV
-        </Link>
-      </li>
-
       <li
         className={`${utilStyles.listItem} ${utilStyles.headingMd} ${utilStyles.lightText}`}
       >
