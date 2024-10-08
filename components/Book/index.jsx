@@ -12,7 +12,6 @@ export default function Book(props) {
         className={styles.card}
         href={`https://openlibrary.org/books/${olid}`}
         target="_blank"
-        aria-label={`${title}, ${progressText}: Click to on Open Library (opens in a new tab)`}
       >
         <Image
           alt={`Book cover for ${title}`}
