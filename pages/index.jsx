@@ -40,7 +40,7 @@ export default function Home(props) {
 
       {currentlyReading.length > 0 && (
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-          <h3 className={utilStyles.headingLg}>Currently Reading</h3>
+          <h2 className={utilStyles.headingLg}>Currently Reading</h2>
 
           <ul className={utilStyles.list}>
             {currentlyReading.map((resource) => (
