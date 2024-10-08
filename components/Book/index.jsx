@@ -13,6 +13,7 @@ export default function Book(props) {
         aria-label={`View ${title} on Open Library (opens in a new tab)`}
       >
         <Image
+          alt={`Book cover for ${title}`}
           src={`https://covers.openlibrary.org/b/olid/${olid}-M.jpg`}
           width={86}
           height={128}
