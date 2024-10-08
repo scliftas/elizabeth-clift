@@ -16,7 +16,8 @@ export default function Layout({ children, home }) {
 
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Senior Full-Stack Engineer with 7+ years of experience working on serverless
+          JavaScript applications using Node, React, and AWS."
         />
         <meta
           property="og:image"
@@ -93,7 +94,11 @@ export default function Layout({ children, home }) {
       )}
 
       <footer className={`${styles.footer} ${utilStyles.lightText}`}>
-        Built by me. Powered by Next.js and Notion.
+        Built by me. Powered by Next.js and Notion. Photography by{" "}
+        <a href="https://www.instagram.com/louis.takes.photos/" target="_blank">
+          Louis Painter
+        </a>
+        .
       </footer>
     </div>
   );
