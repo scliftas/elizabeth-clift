@@ -26,6 +26,7 @@ export default function Home(props) {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <meta name="description">Senior Full-Stack Engineer</meta>
       </Head>
 
       <section className={utilStyles.headingMd}>
