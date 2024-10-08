@@ -4,13 +4,15 @@ import styles from "./book.module.css";
 export default function Book(props) {
   const { olid, title, progress } = props;
 
+  const progressText = `${progress * 100}% completed`;
+
   return (
     <article>
       <a
         className={styles.card}
         href={`https://openlibrary.org/books/${olid}`}
         target="_blank"
-        aria-label={`View ${title} on Open Library (opens in a new tab)`}
+        aria-label={`${title}, ${progressText}: Click to on Open Library (opens in a new tab)`}
       >
         <Image
           alt={`Book cover for ${title}`}
@@ -21,7 +23,7 @@ export default function Book(props) {
 
         <div>
           <p className={styles.title}>{title}</p>
-          <p className={styles.progress}>{progress * 100}% completed</p>
+          <p className={styles.progress}>{progressText}</p>
         </div>
       </a>
     </article>
