@@ -4,7 +4,8 @@ import styles from "./book.module.css";
 export default function Book(props) {
   const { olid, title, progress } = props;
 
-  const progressText = `${progress * 100}% completed`;
+  const progressPercentage = (progress * 100).toFixed(0);
+  const progressText = `${progressPercentage}% completed`;
 
   return (
     <article>
